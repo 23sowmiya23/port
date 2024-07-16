@@ -1,0 +1,230 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f1f1f1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4f09e5;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #4f09e5;
+    border-bottom: 2px solid #4f09e5;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile .text {
+    flex: 1;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+}
+
+.skill .label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #4f09e5;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project-links a {
+    color: #4f09e5;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+.certificates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.certificates img {
+    max-width: 150px;
+    height: auto;
+}
+
+#resume {
+    text-align: center;
+}
+
+#resume button {
+    background-color: #4f09e5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#resume button:hover {
+    background-color: #2f0672;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#contact-form label {
+    font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form input[type="button"] {
+    background-color: #4f09e5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#contact-form input[type="button"]:hover {
+    background-color: #2f0672;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #4f09e5;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #2f0672;
+}
+
+footer {
+    background-color: #4f09e5;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
